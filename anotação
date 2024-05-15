@@ -47,9 +47,24 @@ Aritimrticos
 - - Diminui 
 - * Multiplica
 - / Divide 
-- % Divide numeros inteiros 
+- % Divide e pega o resto
 - ** Potencia 
 
 
-Ordem de Precedência
-![alt text](image.png)
+Logicos 
+
+- negação !
+- Conjunção &&
+- Disjunção ||
+
+Precedência
+
+- () ** /...
+- > < >= ...
+- !
+- &&
+- ||
+
+Operador Ternario
+
+Teste + True : False
