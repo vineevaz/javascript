@@ -31,6 +31,8 @@ Como encurtar a parada
 
 - Ultiliza `` e ${}
 
+
+
 Tbm pode utilizar 
 
 - s.length = Quantos caracteres a String tem 
@@ -38,3 +40,16 @@ Tbm pode utilizar
 - stoLowerCase() = Coloca tudo em Minusculo
 
 n1.toLocaleString('pt-BR', {style: 'currency', currency 'BRL'})
+
+Aritimrticos 
+
+- + Soma
+- - Diminui 
+- * Multiplica
+- / Divide 
+- % Divide numeros inteiros 
+- ** Potencia 
+
+
+Ordem de Precedência
+![alt text](image.png)
