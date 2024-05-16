@@ -5,14 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+            background-color: beige;
+        }
         div#edt{
             background-color: burlywood;
             width: 500px;
             height: 250px;
             padding: 10px;
             border-radius: 10px;
+            margin: auto;
+            color: white;
             
+        }
+        
+        input{
+            background-color: burlywood;
+            width: 100px;
             
+        }
+        h1{
+            text-align: center;
         }
     </style>
 </head>
@@ -37,7 +50,8 @@
             var n2 = Number(tn2.value)
             var s = n1 + n2
 
-            res.innerHTML = `A soma entre ${n1} e ${n2} dar: ${s}` 
+            res.innerHTML = `A soma entre ${n1} e ${n2} dar: ${s}`
+            res.style.color = 'white' 
         }
     </script>
 </body>
