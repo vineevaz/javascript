@@ -17,20 +17,10 @@ body{
     
 }
 header{
-    color:  #ffffff;
+    color:  white;
     text-align: center;
 }
 footer{
-    color: #ffffff;
+    color: white;
     text-align: center;
-}
-div > #imagem{
-    width: 250px;
-    height: 250px;
-    border-radius: 150px;
-    
-}
-div{
-    text-align: center;
-    padding: 5px;
 }
