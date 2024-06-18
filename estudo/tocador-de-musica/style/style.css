@@ -1,6 +1,5 @@
 @charset "UTF-8";
 *{
-    padding: 0px;
     margin: 0px;
 }
 body{
@@ -10,17 +9,16 @@ body{
     display: flex;
     flex-direction: column;
     height: 100vh;
+    align-items: center;
+    
 
-}
-img{
-    width: 450px;
-    height: 400px;
 }
 #bellow-cover{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin: 3em 0 1em 0;
     
 }
 #button-container{
@@ -28,13 +26,29 @@ img{
     flex-direction: row; /*Só pra confirmar que está em linha*/
     justify-content: space-around;
     align-items: center;
+    margin: 0 0 4em;
 }
 .button{
     font-size: 1.5em;
 }
 .button-navigate{
-    font-size: 2em;
+    font-size: 3em;
 }
 .button-biggest{
-    font-size: 3em;
+    font-size: 4em;
+}
+#cover{
+    width: 450px;
+    height: 350px;
+    
+}
+#playlist-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1em 0px 4em 0px;
+}
+.music-container{
+    height: 50%;
+    
 }
