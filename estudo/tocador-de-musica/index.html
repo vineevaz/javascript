@@ -10,34 +10,38 @@
 <body>
     <div class="music-container">
         <h4 id="playlist-title">Player de Musica do Vineecr</h4>
-        <img src="imagens/jaseiespancar.jpg" alt="bamor" id="cover">
+        <img src="imagens/bamor.jpg" alt="bamor" id="cover">
+        <audio id="audio" src="song/Churrasco de tuigay.mp3"></audio>
         <div id="bellow-cover">
             <div id="song-info">
-                <p>nome da musica</p>
-                <p>nome do artista</p>
+                <div id="song-name">Nome da Musica</div>
+                <div id="band-name" class="light-color">Nome da Banda</div>
             </div>
-            <div id="like" class="button">
+            <button id="like" class="button light-color">
                 <i class="bi bi-heart"></i>
-            </div>
+            </button>
         </div>
-            <p>barra de progresso</p>
+            <div id="progress-bar">
+                <div id="current-progress"></div>
+            </div>
         <div id="button-container">
-            <div id="shuffle" class="button">
+            <button id="shuffle" class="button">
                 <i class="bi bi-shuffle"></i>
-                    </div>
-            <div id="previous" class="button button-navigate" >
+                    </button>
+            <button id="previous" class="button button-navigate" >
                 <i class="bi bi-skip-start-fill"></i>
-                    </div>
-            <div id="play" class="button button-biggest">
+                    </button>
+            <button id="play" class="button button-biggest">
                 <i class="bi bi-play-circle-fill"></i>
-                    </div>
-            <div id="next" class="button button-navigate">
+                    </button>
+            <button id="next" class="button button-navigate">
                 <i class="bi bi-skip-end-fill"></i></i>
-                    </div>
-            <div id="repeat" class="button">
+                    </button>
+            <button id="repeat" class="button">
                 <i class="bi bi-repeat"></i>
-                    </div>
+                    </button>
             </div>
     </div> 
+    <script src="script.js"></script>
 </body>
 </html>
