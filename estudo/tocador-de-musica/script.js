@@ -1,10 +1,30 @@
 const songName = document.getElementById('song-name');
-const song = document.getElementById('audio')
-const play = document.getElementById('play')
+const bandName = document.getElementById('band-name');
+const cover = document.getElementById('cover');
+const song = document.getElementById('audio');
+const play = document.getElementById('play');
+const next = document.getElementById('next');
+const previous = document.getElementById('previous');
 
+const churrasco = {
+    songName : 'Churrasco de Tuigay',
+    artist : 'Bamor',
+    File : 'Churrasco-de-Tuigay'
+}
+const bamorTlgd = {
+    songName : 'Aqui so dar Bamor',
+    artist : 'Bamor',
+    File : 'bamor-tlgd'
+}
+const seFicarInferno = {
+    songName : 'Se ficar vai ter duelo',
+    artist : 'Inferno Coral',
+    File : 'se-ficar-inferno'
+}
 
-songName.innerText = 'Churrasco de Tuigay';
 let isPlaying = false;
+const playlist = [churrasco, bamorTlgd, seFicarInferno]
+let index =  0
 
 
 
@@ -30,5 +50,35 @@ function playPauseDecider(){
     }
 }
 
+function initializeSong() {
+    cover.src = `imagens/${playlist[index].File}.jpg`;
+    song.src = `song/${playlist[index].File}.mp3`;
+    songName.innerText = playlist[index].songName;
+    bandName.innerText = playlist[index].artist;
+}
+
+function previousSong(){
+    if(index === 0){
+        index = playlist.length - 1;
+    } else {
+        index -= 1;
+    }
+    initializeSong();
+    playSong();
+}
+function nextSong(){
+    if(index === playlist.length - 1){
+        index = 0;
+    } else {
+        index += 1;
+    }
+    initializeSong();
+    playSong();
+}
+
+initializeSong();
+
 play.addEventListener('click', playPauseDecider)
+previous.addEventListener('click', previousSong)
+next.addEventListener('click', nextSong)
 

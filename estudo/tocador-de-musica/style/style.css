@@ -50,7 +50,7 @@ button{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 1em 0px 3em 0px;
+    margin: 2em 0px 3em 0px;
 }
 .music-container{
     height: 50%;
