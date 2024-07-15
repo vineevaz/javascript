@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <style>
+        div{
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #test{
+            background-color: blue;
+            width: 150px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+        <h1>Aprendendo JS</h1>
+        <button ondblclick="on()"> Aperte para testar!!</button>
+
+        <div id="test" onmouseover="mouseMoveTest()" onmouseout="mouseMoveTest">
+            <p>Click Test</p> 
+        </div>
+    </div>
+    <script src="java.js"></script>
+</body>
+</html>
